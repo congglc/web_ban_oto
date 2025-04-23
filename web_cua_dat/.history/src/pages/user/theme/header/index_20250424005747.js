@@ -4,8 +4,8 @@ import { memo, useEffect, useRef, useState } from "react"
 import { FaSearch, FaUser } from "react-icons/fa"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import lg from "..//..//..//../assets/user/img/lg.jpg"
 import "./style.scss"
+import lg from "..//..//..//../assets/user/img/lg.jpg"
 const Header = () => {
   const location = useLocation()
   const navigate = useNavigate()
@@ -82,7 +82,7 @@ const Header = () => {
       <header className={`header ${isOpen ? "open" : ""}`} ref={headerRef}>
         <div className="container">
           <div className="header-top">
-            <img src={lg} style={{width:'100px',height:'100%'}}/>
+            <img src={import lg from "..//..//..//../assets/user/img/lg.jpg"}/>
 
             <div className="header-search">
               <form onSubmit={handleSearch}>

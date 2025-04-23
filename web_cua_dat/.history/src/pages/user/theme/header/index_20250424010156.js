@@ -82,7 +82,7 @@ const Header = () => {
       <header className={`header ${isOpen ? "open" : ""}`} ref={headerRef}>
         <div className="container">
           <div className="header-top">
-            <img src={lg} style={{width:'100px',height:'100%'}}/>
+            <img src={lg} style={{width:'100%',height:'100%%'}}/>
 
             <div className="header-search">
               <form onSubmit={handleSearch}>

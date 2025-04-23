@@ -1,11 +1,11 @@
 "use client"
 
-import { memo, useEffect, useRef, useState } from "react"
-import { FaSearch, FaUser } from "react-icons/fa"
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import { ROUTERS } from "utils/router"
-import lg from "..//..//..//../assets/user/img/lg.jpg"
+import { memo, useState, useEffect, useRef } from "react"
 import "./style.scss"
+import { ROUTERS } from "utils/router"
+import { Link, useLocation, useNavigate } from "react-router-dom"
+import { FaSearch, FaUser } from "react-icons/fa"
+
 const Header = () => {
   const location = useLocation()
   const navigate = useNavigate()
@@ -82,7 +82,9 @@ const Header = () => {
       <header className={`header ${isOpen ? "open" : ""}`} ref={headerRef}>
         <div className="container">
           <div className="header-top">
-            <img src={lg} style={{width:'100px',height:'100%'}}/>
+            <Link to={ROUTERS.USER.HOME} className="header-logo">
+              OTO.COM.VN
+            </Link>
 
             <div className="header-search">
               <form onSubmit={handleSearch}>

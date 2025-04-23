@@ -1,11 +1,11 @@
 "use client"
 
 import { memo, useEffect, useState } from "react"
+import "./style.scss"
 import { Link, useLocation } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import Product from "..//..//../assets/user/img/lx.jpg"
 import MasterLayout from "../theme/masterLayout"
-import "./style.scss"
+
 const CarsPage = () => {
   const location = useLocation()
   const queryParams = new URLSearchParams(location.search)
@@ -35,7 +35,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hà Nội",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "toyota",
         },
@@ -47,7 +47,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "TP HCM",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "honda",
         },
@@ -59,7 +59,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hưng Yên",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "new",
           brand: "ford",
         },
@@ -71,7 +71,7 @@ const CarsPage = () => {
           transmission: "Số sàn",
           fuel: "Xăng",
           location: "Đà Nẵng",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "hyundai",
         },
@@ -83,7 +83,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hà Nội",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "new",
           brand: "mazda",
         },
@@ -95,7 +95,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "TP HCM",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "kia",
         },
@@ -107,7 +107,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hải Phòng",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "new",
           brand: "toyota",
         },
@@ -119,7 +119,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Đà Nẵng",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "honda",
         },
@@ -131,7 +131,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Cần Thơ",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "new",
           brand: "mitsubishi",
         },
@@ -143,7 +143,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hà Nội",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "hyundai",
         },
@@ -155,7 +155,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Dầu",
           location: "TP HCM",
-          image: Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "new",
           brand: "ford",
         },
@@ -167,7 +167,7 @@ const CarsPage = () => {
           transmission: "Số tự động",
           fuel: "Xăng",
           location: "Hà Nội",
-          image:Product,
+          image: "/placeholder.svg?height=200&width=300",
           type: "used",
           brand: "kia",
         },

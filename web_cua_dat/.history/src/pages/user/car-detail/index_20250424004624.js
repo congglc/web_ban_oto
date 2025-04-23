@@ -203,7 +203,7 @@ const CarDetail = () => {
           <div className="car-detail-container">
             <div className="car-gallery">
               <div className="main-image">
-                <img src={Product} alt={car.title} />
+                <img src={car.images[0] || Product} alt={car.title} />
                 <span className={`car-type ${car.type}`}>{car.type === "new" ? "Xe mới" : "Xe cũ"}</span>
               </div>
             </div>

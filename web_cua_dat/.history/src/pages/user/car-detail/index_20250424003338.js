@@ -1,12 +1,12 @@
 "use client"
 
 import { memo, useEffect, useState } from "react"
-import { FaCalendarAlt, FaCar, FaGasPump, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
+import "./style.scss"
 import { Link, useParams } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import Product from "..//..//../assets/user/img/lx.jpg"
 import MasterLayout from "../theme/masterLayout"
-import "./style.scss"
+import { FaCalendarAlt, FaCar, FaGasPump, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
+
 const CarDetail = () => {
   const { id } = useParams()
   const [car, setCar] = useState(null)
@@ -19,7 +19,7 @@ const CarDetail = () => {
       id: "1",
       title: "Toyota Fortuner 2.7 AT 4x2 2023",
       price: 1250000000,
-      images: Product,
+      images: ["/placeholder.svg?height=400&width=600"],
       type: "used",
       year: 2023,
       brand: "Toyota",
@@ -50,7 +50,7 @@ const CarDetail = () => {
       id: "2",
       title: "Honda CR-V L 2022",
       price: 1090000000,
-      images:Product,
+      images: ["/placeholder.svg?height=400&width=600"],
       type: "used",
       year: 2022,
       brand: "Honda",
@@ -81,7 +81,7 @@ const CarDetail = () => {
       id: "3",
       title: "Ford Territory 1.5L Titanium 2025",
       price: 849000000,
-      images: Product,
+      images: ["/placeholder.svg?height=400&width=600"],
       type: "new",
       year: 2025,
       brand: "Ford",
@@ -112,7 +112,7 @@ const CarDetail = () => {
       id: "4",
       title: "Hyundai Grand i10 1.2 MT 2023",
       price: 360000000,
-      images:Product,
+      images: ["/placeholder.svg?height=400&width=600"],
       type: "used",
       year: 2023,
       brand: "Hyundai",
@@ -203,7 +203,7 @@ const CarDetail = () => {
           <div className="car-detail-container">
             <div className="car-gallery">
               <div className="main-image">
-                <img src={Product} alt={car.title} />
+                <img src={car.images[0] || "/placeholder.svg"} alt={car.title} />
                 <span className={`car-type ${car.type}`}>{car.type === "new" ? "Xe mới" : "Xe cũ"}</span>
               </div>
             </div>

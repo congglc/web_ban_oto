@@ -1,12 +1,12 @@
 "use client"
 
 import { memo, useEffect, useState } from "react"
-import { FaCarAlt } from "react-icons/fa"
+import "./style.scss"
 import { Link } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import Product from "..//..//../assets/user/img/lx.jpg"
 import MasterLayout from "../theme/masterLayout"
-import "./style.scss"
+import { FaCarAlt } from "react-icons/fa"
+
 const PriceList = () => {
   const [carBrands, setCarBrands] = useState([])
   const [selectedBrand, setSelectedBrand] = useState(null)
@@ -15,30 +15,30 @@ const PriceList = () => {
 
   // Mock data for car brands
   const mockBrands = [
-    { id: 1, name: "Toyota", logo: Product },
-    { id: 2, name: "Honda", logo: Product },
-    { id: 3, name: "Ford", logo: Product },
-    { id: 4, name: "Hyundai", logo: Product },
+    { id: 1, name: "Toyota", logo: "/placeholder.svg?height=80&width=80" },
+    { id: 2, name: "Honda", logo: "/placeholder.svg?height=80&width=80" },
+    { id: 3, name: "Ford", logo: "/placeholder.svg?height=80&width=80" },
+    { id: 4, name: "Hyundai", logo: "/placeholder.svg?height=80&width=80" },
   ]
 
   // Mock data for car models
   const mockCarModels = {
     Toyota: [
-      { id: 1, name: "Vios", price: 478000000, image: Product },
-      { id: 2, name: "Corolla Cross", price: 820000000, image: Product },
-      { id: 3, name: "Fortuner", price: 1026000000, image: Product },
+      { id: 1, name: "Vios", price: 478000000, image: "/placeholder.svg?height=150&width=250" },
+      { id: 2, name: "Corolla Cross", price: 820000000, image: "/placeholder.svg?height=150&width=250" },
+      { id: 3, name: "Fortuner", price: 1026000000, image: "/placeholder.svg?height=150&width=250" },
     ],
     Honda: [
-      { id: 1, name: "City", price: 559000000, image: Product },
-      { id: 2, name: "CR-V", price: 998000000, image: Product },
+      { id: 1, name: "City", price: 559000000, image: "/placeholder.svg?height=150&width=250" },
+      { id: 2, name: "CR-V", price: 998000000, image: "/placeholder.svg?height=150&width=250" },
     ],
     Ford: [
-      { id: 1, name: "Ranger", price: 659000000, image: Product },
-      { id: 2, name: "Territory", price: 822000000, image: Product },
+      { id: 1, name: "Ranger", price: 659000000, image: "/placeholder.svg?height=150&width=250" },
+      { id: 2, name: "Territory", price: 822000000, image: "/placeholder.svg?height=150&width=250" },
     ],
     Hyundai: [
-      { id: 1, name: "Accent", price: 426000000, image: Product},
-      { id: 2, name: "Santa Fe", price: 1055000000, image: Product },
+      { id: 1, name: "Accent", price: 426000000, image: "/placeholder.svg?height=150&width=250" },
+      { id: 2, name: "Santa Fe", price: 1055000000, image: "/placeholder.svg?height=150&width=250" },
     ],
   }
 

@@ -1,12 +1,12 @@
 "use client"
 
 import { memo, useEffect, useState } from "react"
-import { FaMapMarkerAlt, FaPhoneAlt, FaStar } from "react-icons/fa"
+import "./style.scss"
 import { Link } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import Product from "..//..//../assets/user/img/lx.jpg"
 import MasterLayout from "../theme/masterLayout"
-import "./style.scss"
+import { FaMapMarkerAlt, FaPhoneAlt, FaStar } from "react-icons/fa"
+
 const Dealerships = () => {
   const [dealerships, setDealerships] = useState([])
   const [loading, setLoading] = useState(true)
@@ -24,7 +24,7 @@ const Dealerships = () => {
       reviews: 0,
       city: "TP HCM",
       carsCount: 12,
-      image: Product,
+      image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Dealerships = () => {
       reviews: 3,
       city: "Hà Nội",
       carsCount: 95,
-      image: Product,
+      image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ const Dealerships = () => {
       reviews: 26,
       city: "Hà Nội",
       carsCount: 35,
-      image: Product,
+      image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const Dealerships = () => {
       reviews: 10,
       city: "TP HCM",
       carsCount: 42,
-      image:Product,
+      image: "/placeholder.svg?height=200&width=200",
     },
   ]
 
@@ -148,7 +148,7 @@ const Dealerships = () => {
               {filteredDealerships.map((dealership) => (
                 <div className="dealership-card" key={dealership.id}>
                   <div className="dealership-image">
-                    <img src={Product} alt={dealership.name} />
+                    <img src={dealership.image || "/placeholder.svg"} alt={dealership.name} />
                   </div>
                   <div className="dealership-info">
                     <h2 className="dealership-name">{dealership.name}</h2>

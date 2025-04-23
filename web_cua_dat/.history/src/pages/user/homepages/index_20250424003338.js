@@ -1,11 +1,10 @@
 "use client"
 
 import { memo, useEffect, useState } from "react"
+import "./style.scss"
 import { Link } from "react-router-dom"
 import { ROUTERS } from "utils/router"
-import Product from "..//..//../assets/user/img/lx.jpg"
 import MasterLayout from "../theme/masterLayout"
-import "./style.scss"
 
 const HomePage = () => {
   const [featuredCars, setFeaturedCars] = useState([])
@@ -20,7 +19,7 @@ const HomePage = () => {
         title: "Toyota Fortuner 2.7 AT 4x2",
         price: 1250000000,
         year: 2023,
-        image: Product,
+        image: "/placeholder.svg?height=200&width=300",
         type: "used",
       },
       {
@@ -28,7 +27,7 @@ const HomePage = () => {
         title: "Honda CR-V L 2022",
         price: 1090000000,
         year: 2022,
-        image: Product,
+        image: "/placeholder.svg?height=200&width=300",
         type: "used",
       },
       {
@@ -36,7 +35,7 @@ const HomePage = () => {
         title: "Ford Territory 1.5L Titanium",
         price: 849000000,
         year: 2025,
-        image: Product,
+        image: "/placeholder.svg?height=200&width=300",
         type: "new",
       },
       {
@@ -44,7 +43,7 @@ const HomePage = () => {
         title: "Hyundai Grand i10 1.2 MT",
         price: 360000000,
         year: 2023,
-        image: Product,
+        image: "/placeholder.svg?height=200&width=300",
         type: "used",
       },
     ]
